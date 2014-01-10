@@ -157,7 +157,8 @@ a.qindexHL {
 }
 
 a.el {
-	font-family: "Courier New", courier, monospace;
+	//font-family: "Courier New", courier, monospace;
+	font-family: Courier, Consolas, monospace;
 	//font-weight: bold;
 	font-weight: normal;
 }
@@ -195,15 +196,23 @@ pre.fragment {
 }
 
 div.fragment {
-        //padding: 0px;
-        padding: 4px 6px;
-        margin: 0px;
-	background-color: #FBFCFD;
-	border: 1px solid #C4CFE5;
+	//padding: 0px;
+     //padding: 4px 6px;
+     //margin: 0px;
+	//background-color: #FBFCFD;
+	//border: 1px solid #C4CFE5;
+	
+	padding: 6px 10px;
+	margin: 15px 0px;
+	border: solid 1px rgb(221, 221, 221);
+	border-radius: 3px;
+
+	background-color: rgb(248, 248, 248);
 }
 
 div.line {
-	font-family: monospace, fixed;
+	//font-family: monospace, fixed;
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
         font-size: 13px;
 	min-height: 13px;
 	line-height: 1.0;
@@ -269,9 +278,15 @@ div.ah {
 }
 
 div.groupHeader {
-	margin-left: 16px;
-	margin-top: 12px;
-	font-weight: bold;
+	//margin-left: 16px;
+	//margin-top: 12px;
+	margin-left: 0px;
+	margin-top: 9px;
+	margin-bottom: 4.7px;
+	
+	font-size: 19px;
+	//font-weight: bold;
+	font-weight: normal;
 }
 
 div.groupText {
@@ -480,7 +495,8 @@ table.memberdecls {
 	margin: 4px;
 	padding: 1px 0 0 8px;
 
-	font-family: "Courier New", courier, monospace;
+	//font-family: "Courier New", courier, monospace;
+	font-family: Courier, Consolas, monospace;
 }
 
 .mdescLeft, .mdescRight {
@@ -557,7 +573,8 @@ table.memberdecls {
 }
 
 .memname {
-	   font-family: "Courier New", courier, monospace;
+	   //font-family: "Courier New", courier, monospace;
+	   font-family: Courier, Consolas, monospace;
         font-weight: bold;
         //margin-left: 6px;
 	   margin-left: 0px;
@@ -681,11 +698,13 @@ dl.reflist dd {
 
 .params .paramname, .retval .paramname {
         //font-weight: bold;
-	   font-family: "Courier New", courier, monospace;
+	   //font-family: "Courier New", courier, monospace;
+	   font-family: Courier, Consolas, monospace;
 	   font-style: italic;
 	   font-weight: normal;
+	   text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
 }
-        
+
 .params .paramtype {
         font-style: italic;
         vertical-align: top;
@@ -1024,9 +1043,11 @@ dl.note
 {
         //margin-left:-7px;
 	   margin-left: 0px;
-        padding-left: 3px;
-        border-left:4px solid;
+	   padding: 6px 0px 3px 8px;
+        //padding-left: 8px;
+        border-left:  6px solid;
         border-color: #D0C000;
+	   background-color: #fff799
 }
 
 dl.warning, dl.attention
@@ -1260,13 +1281,14 @@ tr.heading h2 {
 
 .tabs, .tabs2, .tabs3 {
 	background-image: none;
-	background-color: #222;
+	background-color: #2f3a48;
 	color: white;
+
 }
 
 
 .tabs2 {
-	background-color: #444;
+	background-color: #51637b;
 }
 
 
@@ -1278,7 +1300,8 @@ tr.heading h2 {
 .tablist a {
 	background-image: none;
 	color: white;
-	text-shadow: none;
+	//text-shadow: none;
+	text-shadow: rgba(0, 0, 0, 0.6) 0px 2px 2px;
 }
 
 
@@ -1290,13 +1313,13 @@ tr.heading h2 {
 
 .tablist li.current a {
 	background-image: none;
-	color: #ccc;
+	//color: #ccc;
 	text-shadow: none;
 }
 
 
 .tabs li.current {
-	background-color: #444;
+	background-color: #51637b;
 }
 
 .tabs2 li.current {
