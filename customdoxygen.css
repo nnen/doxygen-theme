@@ -1052,10 +1052,14 @@ dl.note
 
 dl.warning, dl.attention
 {
-        margin-left:-7px;
-        padding-left: 3px;
-        border-left:4px solid;
-        border-color: #FF0000;
+	//margin-left:-7px;
+	//padding-left: 3px;
+	margin-left: 0px;
+	padding: 6px 0px 3px 8px;
+	
+	//border-left:4px solid;
+	border-left: 6px solid;
+	border-color: #FF0000;
 }
 
 dl.pre, dl.post, dl.invariant
@@ -1068,16 +1072,26 @@ dl.pre, dl.post, dl.invariant
 
 dl.deprecated
 {
-        margin-left:-7px;
-        padding-left: 3px;
-        border-left:4px solid;
+        //margin-left:-7px;
+        //padding-left: 3px;
+	   margin-left: 0px;
+	   padding: 6px 0px 3px 8px;
+        //border-left: 4px solid;
+        border-left: 6px solid;
         border-color: #505050;
+}
+
+dl.deprecated dt a.el
+{
+	font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
 }
 
 dl.todo
 {
-        margin-left:-7px;
-        padding-left: 3px;
+        //margin-left:-7px;
+        //padding-left: 3px;
+	   margin-left: 0px;
+	   padding: 6px 0px 3px 8px;
         border-left:4px solid;
         border-color: #00C0E0;
 }
