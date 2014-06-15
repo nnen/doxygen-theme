@@ -21,8 +21,8 @@ h1.groupheader {
 }
 
 h2.groupheader {
-	//border-bottom: 1px solid #879ECB;
-	border-bottom: none;
+	border-bottom: 1px solid #07C;
+	//border-bottom: none;
 	//color: #354C7B;
 	color: rgb(60, 76, 108);
 	font-size: 24px;
@@ -167,12 +167,12 @@ a.elRef {
 }
 
 a.code, a.code:visited {
-	//color: #4665A2; 
+	//color: #4665A2;
 	color: rgb(51, 102, 204);
 }
 
 a.codeRef, a.codeRef:visited {
-	//color: #4665A2; 
+	//color: #4665A2;
 	color: rgb(51, 102, 204);
 }
 
@@ -201,7 +201,7 @@ div.fragment {
      //margin: 0px;
 	//background-color: #FBFCFD;
 	//border: 1px solid #C4CFE5;
-	
+
 	padding: 6px 10px;
 	margin: 15px 0px;
 	border: solid 1px rgb(221, 221, 221);
@@ -283,7 +283,7 @@ div.groupHeader {
 	margin-left: 0px;
 	margin-top: 9px;
 	margin-bottom: 4.7px;
-	
+
 	font-size: 19px;
 	//font-weight: bold;
 	font-weight: normal;
@@ -332,7 +332,7 @@ p.formulaDsp {
 }
 
 img.formulaDsp {
-	
+
 }
 
 img.formulaInl {
@@ -390,20 +390,20 @@ span.charliteral {
 	color: #008080
 }
 
-span.vhdldigit { 
-	color: #ff00ff 
+span.vhdldigit {
+	color: #ff00ff
 }
 
-span.vhdlchar { 
-	color: #000000 
+span.vhdlchar {
+	color: #000000
 }
 
-span.vhdlkeyword { 
-	color: #700070 
+span.vhdlkeyword {
+	color: #700070
 }
 
-span.vhdllogic { 
-	color: #ff0000 
+span.vhdllogic {
+	color: #ff0000
 }
 
 blockquote {
@@ -490,7 +490,7 @@ table.memberdecls {
 .memItemLeft, .memItemRight,
 .memTemplItemLeft, .memTemplItemRight, .memTemplParams {
 	//background-color: #F9FAFC;
-	background-color: white;
+	//background-color: white;
 	border: none;
 	margin: 4px;
 	padding: 1px 0 0 8px;
@@ -502,7 +502,7 @@ table.memberdecls {
 .mdescLeft, .mdescRight {
 	padding: 0px 8px 4px 8px;
 	color: #555;
-	
+
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 	font-style: italic;
 }
@@ -594,14 +594,13 @@ table.memberdecls {
         //color: #253555;
 	   color: black;
         font-weight: bold;
-        //text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.9);
-        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        //text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
         //background-image:url('nav_f.png');
 	   background-image: none;
         //background-repeat:repeat-x;
         //background-color: #E2E8F2;
 	   //background-color: rgb(235, 238, 241);
-	   background-color: #ccc;
+	   background-color: #f0f0ff;
         /* opera specific markup */
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
         //border-top-right-radius: 4px;
@@ -627,9 +626,9 @@ table.memberdecls {
 
 .memdoc, dl.reflist dd {
 	border: none;
-        //border-bottom: 1px solid #A8B8D9;      
-        //border-left: 1px solid #A8B8D9;      
-        //border-right: 1px solid #A8B8D9; 
+        //border-bottom: 1px solid #A8B8D9;
+        //border-left: 1px solid #A8B8D9;
+        //border-right: 1px solid #A8B8D9;
         padding: 6px;
         background-color: #FBFCFD;
         border-top-width: 0;
@@ -694,22 +693,25 @@ dl.reflist dd {
 .params, .retval, .exception, .tparams {
         margin-left: 0px;
         padding-left: 0px;
-}       
+}
 
 .params .paramname, .retval .paramname {
-        //font-weight: bold;
+     //font-weight: bold;
 	   //font-family: "Courier New", courier, monospace;
 	   font-family: Courier, Consolas, monospace;
-	   font-style: italic;
+	   //font-style: italic;
 	   font-weight: normal;
-	   text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
+	   //text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
+		background-color: #f8f8f8;
+		display: inline;
+		margin: 0 16px 0 0;
 }
 
 .params .paramtype {
         font-style: italic;
         vertical-align: top;
-}       
-        
+}
+
 .params .paramdir {
         font-family: "courier new",courier,monospace;
         vertical-align: top;
@@ -887,8 +889,8 @@ table.fieldtable {
 
 .fieldtable td.fielddoc p:first-child {
         margin-top: 0px;
-}       
-        
+}
+
 .fieldtable td.fielddoc p:last-child {
         margin-bottom: 2px;
 }
@@ -962,7 +964,7 @@ table.fieldtable {
 	color: #283A5D;
 	font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
 	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.9);
-	text-decoration: none;        
+	text-decoration: none;
 }
 
 .navpath li.navelem a:hover
@@ -991,7 +993,7 @@ div.summary
 	padding-right: 5px;
 	width: 50%;
 	text-align: right;
-}       
+}
 
 div.summary a
 {
@@ -1056,7 +1058,7 @@ dl.warning, dl.attention
 	//padding-left: 3px;
 	margin-left: 0px;
 	padding: 6px 0px 3px 8px;
-	
+
 	//border-left:4px solid;
 	border-left: 6px solid;
 	border-color: #FF0000;
@@ -1123,19 +1125,19 @@ dl.section dd {
 	vertical-align: bottom;
 	border-collapse: separate;
 }
- 
+
 #projectlogo img
-{ 
+{
 	border: 0px none;
 }
- 
+
 #projectname
 {
 	font: 300% Tahoma, Arial,sans-serif;
 	margin: 0px;
 	padding: 2px 0px;
 }
-    
+
 #projectbrief
 {
 	font: 120% Tahoma, Arial,sans-serif;
@@ -1230,7 +1232,7 @@ div.toc ul {
         list-style: none outside none;
         border: medium none;
         padding: 0px;
-}       
+}
 
 div.toc li.level1 {
         margin-left: 0px;
@@ -1370,4 +1372,3 @@ tr.heading h2 {
 	color: white;
 	text-shadow: none;
 }
-
