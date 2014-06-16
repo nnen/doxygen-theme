@@ -6,11 +6,12 @@ body, table, div, p, dl {
 	/*background-color:#111;
 	color: #eee;*/
 	// font: 400 14px/22px Roboto,sans-serif;
-	font: 11pt "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	font: 10pt "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 }
 
 tt, code, kbd, samp {
 	font-family: Consolas, "Courier New", courier, Courier, monospace;
+	font-size:105%;
 }
 /* @group Heading Levels */
 
@@ -167,6 +168,7 @@ a.qindexHL {
 a.el {
 	//font-family: "Courier New", courier, monospace;
 	font-family: Consolas, "Courier New", courier, Courier, monospace;
+	font-size:105%;
 	//font-weight: bold;
 }
 
@@ -200,7 +202,7 @@ pre.fragment {
   margin: 4px 8px 4px 2px;
   overflow: auto;
   word-wrap: break-word;
-  font-size:  9pt;
+  font-size:  10pt;
   line-height: 125%;
   font-family: Consolas, "Courier New", courier, Courier, monospace, fixed;
   font-size: 105%;
@@ -224,8 +226,8 @@ div.fragment {
 div.line {
 	//font-family: monospace, fixed;
 	font-family: Consolas, "Courier New", courier, Courier, monospace;
-  font-size: 13px;
-	min-height: 13px;
+  font-size: 10pt;
+	min-height: 11pt;
 	line-height: 1.0;
 	text-wrap: unrestricted;
 	white-space: -moz-pre-wrap; /* Moz */
@@ -583,12 +585,13 @@ table.memberdecls {
 
 .memname {
 	font-family: Consolas, "Courier New", courier, Courier, monospace;
+	font-size:105%;
   font-weight: bold;
   //margin-left: 6px;
   margin-left: 0px;
 }
 .memname a.el{
-font-weight: bold;	
+font-weight: bold;
 }
 
 .memname td {
@@ -708,6 +711,7 @@ dl.reflist dd {
 .params .paramname, .retval .paramname {
      //font-weight: bold;
 	font-family: Consolas, "Courier New", courier, Courier, monospace;
+	font-size:105%;
   //font-style: italic;
   font-weight: normal;
   text-shadow:none;//: rgba(0, 0, 0, 0.3) 0px 1px 1px;
@@ -723,6 +727,7 @@ dl.reflist dd {
 
 .params .paramdir {
 	font-family: Consolas, "Courier New", courier, Courier, monospace;
+	font-size:105%;
   vertical-align: top;
 }
 
