@@ -2,15 +2,16 @@
 body{
 	background-color: #fff;
 	margin: 0;
+	font-size: 12pt;
 }
 body, table, div, p, dl,
-.mdescLeft, .mdescRight {
-font-size: 12pt;
+table.directory {
 font-family: "Segoe UI", "Roboto", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
 color: #111;
+font-size: 1rem;
 }
 
-
+.icon, span.mlabel,
 tt, code, kbd, samp, a.el,
 pre.fragment, div.line,
 .mdescLeft, .mdescRight,
@@ -19,7 +20,6 @@ pre.fragment, div.line,
 .memname,
 .params .paramdir {
 	font-family: Consolas, "Courier New", courier, Courier, monospace;
-	font-size:1.05rem;
 	color: #111;
 }
 
@@ -27,6 +27,7 @@ pre.fragment, div.line,
 .title{
 	font-family: "Cambria", serif;
 }
+#projectname, #projectbrief,
 h1, h2, h3 {
 	font-family: "Segoe UI Light", "Open Sans Light", Roboto, sans-serif;
 	color: #000;//black
@@ -145,19 +146,15 @@ div.navtab {
 /* @group Link Styling */
 
 a {
-	color: #3D578C;
-	//color: rgb(51, 102, 204);
+	color: #16499a;//darkBlue
 	font-weight: normal;
 	text-decoration: none;
 }
-
-
-.contents a:visited {
-	color: #16499a;//darkBlue
-}
-
 a:hover {
 	text-decoration: underline;
+}
+.contents a, .contents a:visited {
+	color: #16499a;//darkBlue
 }
 
 a.qindex {
@@ -183,11 +180,11 @@ a.elRef {
 }
 
 a.code, a.code:visited {
-	color: #4665A2;
+	color: #16499a;//darkBlue
 }
 
 a.codeRef, a.codeRef:visited {
-	color: #4665A2;
+	color: #16499a;//darkBlue
 }
 
 /* @end */
@@ -488,6 +485,7 @@ table.memberdecls {
 	padding: 0px 8px 4px 8px;
 	color: #555;
 	font-style: italic;
+	font-size: .9rem;
 }
 
 .memSeparator {
@@ -519,8 +517,8 @@ table.memberdecls {
 /* Styles for detailed member documentation */
 
 .memtemplate {
-	font-size: 80%;
-	color: #4665A2;
+	font-size: .8rem;
+	color: #666;//
 	font-weight: normal;
 	margin-left: 2px;
 }
@@ -557,12 +555,11 @@ table.memberdecls {
 }
 
 .memname {
-  font-weight: bold;
-  //margin-left: 6px;
+	font-weight: normal;
   margin-left: 0px;
 }
 .memname a.el{
-font-weight: bold;
+font-weight: normal;
 }
 
 .memname td {
@@ -571,12 +568,13 @@ font-weight: bold;
 
 .memproto, dl.reflist dt {
 	border: none;
+	border-radius: 0;
   padding: 6px;
-  color: #253555;
-  font-weight: bold;
+  color: #00aff0;
+  font-weight: normal;
   text-shadow:none;
   background-image:none;
-  background-color: #f0f0ff;
+  background-color: #f0f4f8;
   /* opera specific markup */
   box-shadow:  none;
   /* firefox specific markup */
@@ -586,11 +584,8 @@ font-weight: bold;
 .memdoc, dl.reflist dd {
 	border:  none;
   padding: 6px;
-  background-color: #FBFCFD;
   border-top-width: 0;
-  //background-image:url('nav_g.png');
   background-image: none;
-  //background-repeat:repeat-x;
   background-color: #FFFFFF;
   /* opera specific markup */
   //border-bottom-left-radius: 4px;
@@ -600,16 +595,10 @@ font-weight: bold;
   border-bottom-right-radius: 0px;
   box-shadow: none;
   /* firefox specific markup */
-  //-moz-border-radius-bottomleft: 4px;
-  //-moz-border-radius-bottomright: 4px;
-  //-moz-box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 5px;
   -moz-border-radius-bottomleft: 0px;
   -moz-border-radius-bottomright: 0px;
   -moz-box-shadow: none;
   /* webkit specific markup */
-  //-webkit-border-bottom-left-radius: 4px;
-  //-webkit-border-bottom-right-radius: 4px;
-  //-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
   -webkit-border-bottom-left-radius: 0px;
   -webkit-border-bottom-right-radius: 0px;
   -webkit-box-shadow: none;
@@ -692,17 +681,14 @@ span.mlabels {
 }
 
 span.mlabel {
-  background-color: #728DC1;
-  border-top:1px solid #5373B4;
-  border-left:1px solid #5373B4;
-  border-right:1px solid #C4CFE5;
-  border-bottom:1px solid #C4CFE5;
-	text-shadow:none;//: none;
-	color: white;
+  background-color:#f8f8f8; /*grey*/
+  border:1px solid #ccc;
+	text-shadow:none;
+	color: #00aff0;/*blue*/
 	margin-right: 4px;
 	padding: 2px 3px;
-	border-radius: 3px;
-	font-size: 7pt;
+	border-radius: 0px;
+	font-size: .7rem;
 	white-space: nowrap;
 	vertical-align: middle;
 }
@@ -1081,20 +1067,25 @@ dl.section dd {
 #projectlogo img
 {
 	border: 0px none;
+	width: 4.5rem;
+	float:left;
 }
 
 #projectname
 {
-	font: 300% Tahoma, Arial,sans-serif;
+	font-size: 3rem;
 	margin: 0px;
 	padding: 2px 0px;
+	float:left;
 }
 
 #projectbrief
 {
-	font: 120% Tahoma, Arial,sans-serif;
+	font-size: 1.2rem;
 	margin: 0px;
-	padding: 0px;
+	padding: 2.5rem 0 0 .25rem;
+	float:left;
+	font-style: italic;
 }
 
 #projectnumber
@@ -1265,7 +1256,8 @@ tr.heading h2 {
 
 .tablist li {
 	background-image: none;
-	font-size:10pt;
+	font-size:0.8rem;
+	line-height:1.65rem;
 }
 
 
@@ -1327,4 +1319,24 @@ tr.heading h2 {
 	background-image: none;
 	color: white;
 	text-shadow:none;//: none;
+}
+
+.icona {
+width: 1.5rem;
+height: 1.45rem;
+display: inline-block;
+}
+
+.icon {
+font-weight: bold;
+font-size: .8rem;
+height: 1rem;
+width: 1rem;
+display: inline-block;
+background-color: #f0a30a;
+color: white;
+text-align: center;
+border-radius: 0px;
+margin-left: 2px;
+margin-right: 2px;
 }
