@@ -2,12 +2,12 @@ Custom Doxygen Theme
 ====================
 
 This is a custom [doxygen](http://www.stack.nl/~dimitri/doxygen/) theme
-inspired by [Mac Developer Library](https://developer.apple.com/library/mac/navigation/index.html).
+forked from [doxygen-theme](https://github.com/nnen/doxygen-theme) by nnen
+inspired by [Metro UI CSS](http://metroui.org.ua/)
 
 Example
 -------
-
-An example of documentation using this theme can be found at http://milik.cz/~jan/cppapp/docs/index.html.
+An example of documentation using this theme can be found at http://nafsadh.github.io/scire/doc/
 
 Installation
 ------------
@@ -17,5 +17,4 @@ somewhere to your project and in your `Doxyfile`, change the following
 settings:
 
  * `HTML_EXTRA_STYLESHEET` - set to point to `customdoxygen.css`
- * `LAYOUT_FILE` - set to point to `DoxygenLayout.xml`
-
+ * `LAYOUT_FILE` - set to point to `DoxygenLayout.xml` (optional)
