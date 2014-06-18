@@ -1,12 +1,15 @@
  /* The standard CSS for doxygen 1.8.4 */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,greek-ext,greek,latin-ext);
 body{
 	background-color: #fff;
 	margin: 0;
 	font-size: 12pt;
 }
+
 body, table, div, p, dl,
 table.directory {
-font-family: "Segoe UI", "Roboto", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+font-family: "Segoe UI", "Lucida Sans Unicode", Helvetica, Arial, Verdana, 'Roboto', sans-serif;
 color: #111;
 font-size: 1rem;
 }
@@ -19,7 +22,7 @@ pre.fragment, div.line,
 .memTemplItemLeft, .memTemplItemRight, .memTemplParams,
 .memname,
 .params .paramdir {
-	font-family: Consolas, "Courier New", courier, Courier, monospace;
+	font-family: Consolas, 'Courier New', courier, Courier, monospace;
 	color: #111;
 }
 
@@ -29,10 +32,10 @@ pre.fragment, div.line,
 }
 #projectname, #projectbrief,
 h1, h2, h3 {
-	font-family: "Segoe UI Light", "Open Sans Light", Roboto, sans-serif;
+	font-family: "Segoe UI Light", 'Source Sans Pro', sans-serif;
 	color: #000;//black
 	margin: 1.75em 0 .2em 0;
-	font-weight: normal;
+	font-weight: 200;
 }
 
 /* @group Heading Levels */
@@ -44,7 +47,8 @@ h1, h2, h3 {
 	margin: 10px 2px;
 }
 
-h1, h1.groupheader {  font-weight: 300;
+h1, h1.groupheader {
+	font-weight: 200;
   color: #000000;
   letter-spacing: 0.00em;
   font-size: 3.5rem;
@@ -52,7 +56,7 @@ h1, h1.groupheader {  font-weight: 300;
 }
 
 h2, h2.groupheader {
-	font-weight: 300;
+	font-weight: 200;
   color: #000000;
   letter-spacing: 0.00em;
   font-size: 2.2rem;
@@ -65,6 +69,7 @@ h2, h2.groupheader {
 }
 
 h3.groupheader {
+	font-weight: 200;
 	font-size: 2.0rem;
 	line-height: 2.1rem;
 	color: #000;//black
