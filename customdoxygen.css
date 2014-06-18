@@ -1,56 +1,72 @@
  /* The standard CSS for doxygen 1.8.4 */
-
-//normal text font
+body{
+	background-color: #fff;
+	margin: 0;
+}
 body, table, div, p, dl,
-.title,
-.mdescLeft, .mdescRight{
-font-size: 10pt;
+.mdescLeft, .mdescRight {
+font-size: 12pt;
 font-family: "Segoe UI", "Roboto", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+color: #111;
 }
 
-//code text font
+
 tt, code, kbd, samp, a.el,
-pre.fragment,div.line,
+pre.fragment, div.line,
 .mdescLeft, .mdescRight,
 .memItemLeft, .memItemRight,
 .memTemplItemLeft, .memTemplItemRight, .memTemplParams,
 .memname,
-.params .paramdir     {
+.params .paramdir {
 	font-family: Consolas, "Courier New", courier, Courier, monospace;
-	font-size:105%;
+	font-size:1.05rem;
+	color: #111;
 }
 
-body, table, div, p, dl {
-	//dark>>
-	/*background-color:#111;
-	color: #eee;*/
-	// font: 400 14px/22px Roboto,sans-serif;
-}
-/* @group Heading Levels */
 
-h1.groupheader {
-	font-size: 18pt;
+.title{
+	font-family: "Cambria", serif;
 }
-
-.title {
-	font-size: 20pt;
+h1, h2, h3 {
+	font-family: "Segoe UI Light", "Open Sans Light", Roboto, sans-serif;
+	color: #000;//black
+	margin: 1.75em 0 .2em 0;
 	font-weight: normal;
+}
+
+/* @group Heading Levels */
+.title {;
+	letter-spacing: 0.00em;
+	font-size: 2rem;
+	line-height: 2.1rem;
+	font-weight: 500;
 	margin: 10px 2px;
 }
 
-h2.groupheader {
-	border-bottom: 1px solid #07C;
-	color: #354C7B;
-	font-size: 16pt;
-	font-weight: normal;
-	margin-top: 1.75em;
-	margin: 1.75em 0 1em 0;
+h1, h1.groupheader {  font-weight: 300;
+  color: #000000;
+  letter-spacing: 0.00em;
+  font-size: 3.5rem;
+  line-height: 3.7rem;
+}
+
+h2, h2.groupheader {
+	font-weight: 300;
+  color: #000000;
+  letter-spacing: 0.00em;
+  font-size: 2.2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.01em;
+	border-bottom: none;
+	margin: 1.75em 0 .2em 0;
 	padding: 0px;
 	width: 100%;
 }
 
 h3.groupheader {
-	font-size: 13pt;
+	font-size: 2.0rem;
+	line-height: 2.1rem;
+	color: #000;//black
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,16 +79,6 @@ h1, h2, h3, h4, h5, h6 {
 	//margin: 42px 0px 20px 0px;
 }
 
-h1 {
-	font-size: 18pt;
-}
-
-h2 {
-	color: #07C;
-	font-size: 24px;
-	font-weight: normal;
-	margin: 42px 0px 20px 0px;
-}
 
 h1.glow, h2.glow, h3.glow, h4.glow, h5.glow, h6.glow {
 	text-shadow:none;//: 0 0 15px cyan;
@@ -122,8 +128,8 @@ h3.version {
 }
 
 div.qindex, div.navtab{
-	background-color: #EBEFF6;
-	border: 1px solid #A3B4D7;
+	background-color: #00aff0;//blue
+	border: 1px solid #00aff0;//blue
 	text-align: center;
 }
 
@@ -147,8 +153,7 @@ a {
 
 
 .contents a:visited {
-	color: #4665A2;
-	//color: rgb(51, 102, 204);
+	color: #16499a;//darkBlue
 }
 
 a:hover {
@@ -257,13 +262,13 @@ span.lineno a:hover {
 }
 
 div.ah {
-	background-color: black;
+	background-color: #F0A31A;//amber
 	font-weight: bold;
-	color: #ffffff;
+	color: #fff;//white
 	margin-bottom: 3px;
 	margin-top: 3px;
 	padding: 0.2em;
-	border: solid thin #333;
+	border: none;
 	border-radius: 0.0em;
 	-webkit-border-radius: .0em;
 	-moz-border-radius: .0em;
@@ -284,12 +289,6 @@ div.groupHeader {
 div.groupText {
 	margin-left: 16px;
 	font-style: italic;
-}
-
-body {
-	background-color: white;
-	color: black;
-  margin: 0;
 }
 
 div.contents {
@@ -479,7 +478,7 @@ table.memberdecls {
 .mdescLeft, .mdescRight,
 .memItemLeft, .memItemRight,
 .memTemplItemLeft, .memTemplItemRight, .memTemplParams {
-	background-color: #F9FAFC;
+	background-color: #f0f4f8;
 	border: none;
 	margin: 4px;
 	padding: 1px 0 0 8px;
@@ -492,7 +491,7 @@ table.memberdecls {
 }
 
 .memSeparator {
-  border-bottom: 1px solid #DEE4F0;
+  border-bottom: 1px solid #fff;
   line-height: 1px;
   margin: 0px;
   padding: 0px;
@@ -970,11 +969,8 @@ div.ingroups a
 
 div.header
 {
-	//background-image:url('nav_h.png');
-	//background-repeat:repeat-x;
-	//background-color: #F9FAFC;
 	background-image: none;
-	background-color: white;
+	background-color: #f8f8f8;
 	margin:  0px;
 	//border-bottom: 1px solid #C4CFE5;
 	border: none;
@@ -1253,49 +1249,53 @@ tr.heading h2 {
 
 .tabs, .tabs2, .tabs3 {
 	background-image: none;
-	background-color: #2f3a48;
+	background-color: #00aff0; //blue
 	color: white;
 
 }
-
+.tablist li.current a{
+	text-shadow: none;
+}
 
 .tabs2 {
-	background-color: #51637b;
+	background-color: #16499a; //darkBlue
+	font-size:11pt;
 }
 
 
 .tablist li {
 	background-image: none;
+	font-size:10pt;
 }
 
 
 .tablist a {
 	background-image: none;
 	color: white;
-	text-shadow:none;//: none;
-	text-shadow:none;//: rgba(0, 0, 0, 0.6) 0px 2px 2px;
+	text-shadow:none;
 }
 
 
 .tablist a:hover {
 	background-image: none;
-	text-shadow:none;//: none;
+	text-shadow:none;
 }
 
 
 .tablist li.current a {
 	background-image: none;
-	//color: #ccc;
-	text-shadow:none;//: none;
+	color: #fff;
+	text-shadow:none;
 }
 
 
 .tabs li.current {
-	background-color: #51637b;
+	background-color: #16499a; //darkBlue
+	color: #fff;
 }
 
 .tabs2 li.current {
-	background-color: #888;
+	background-color: #f0a30a; /amber
 }
 
 
@@ -1306,7 +1306,7 @@ tr.heading h2 {
 
 .navpath ul {
 	background-image: none;
-	background-color: #888;
+	background-color: #1b6eae; //darkCyan
 	border: none;
 }
 
