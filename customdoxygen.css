@@ -7,7 +7,7 @@ body{
 	font-size: 12pt;
 }
 body, table, div, p, dl,
-table.directory {
+table.directory, #nav-tree,#nav-tree .label {
 font-family: "Segoe UI", "Lucida Sans Unicode", Helvetica, Arial, Verdana, 'Roboto', sans-serif;
 color: #111;
 font-size: 1rem;
@@ -37,7 +37,7 @@ h1, h2, h3 {
 }
 /* @group Heading Levels */
 .title {
-	color: indigo;
+	color: #333;
 	letter-spacing: 0.00em;
 	font-size: 2rem;
 	line-height: 2.1rem;
@@ -138,11 +138,12 @@ a:hover {
 .contents a, .contents a:visited {
 	color: #16499a;/*darkBlue*/
 }
-a.qindex {
-	font-weight: bold;
+a.qindex, a.qindex:visited  {
+	color: #fff;
+	font-weight: normal;
 }
 a.qindexHL {
-	font-weight: bold;
+	font-weight: normal;
 	background-color: #9CAFD4;
 	color: #ffffff;
 	border: 1px double #869DCA;
@@ -224,8 +225,8 @@ span.lineno a:hover {
 	background-color: #C8C8C8;
 }
 div.ah {
-	background-color: #F0A31A;/*amber*/
-	font-weight: bold;
+	background-color: #16499a;/*amber*/
+	font-weight: lighter;
 	color: #fff;/*white*/
 	margin-bottom: 3px;
 	margin-top: 3px;
@@ -422,7 +423,7 @@ table.memberdecls {
   white-space: nowrap;
 }
 .memItemLeft{padding-top:6px;}
-.memItemRight {
+.memItemRight, .memTemplItemRight {
 	padding-top:6px;
 	width: 100%;
 }
@@ -1046,7 +1047,7 @@ tr.heading h2 {
 #navrow3 a{color: #16499a;}
 #navrow4{background-color:#eee; }
 #navrow4 li{border: 1px solid #e8e8e8;}
-#navrow4 a{color:#00aff0;}
+#navrow4 a{color:#00aff0;font-weight: normal;}
 .tablist li {
 	background-image: none;
 	font-size:0.8rem;
@@ -1071,7 +1072,7 @@ tr.heading h2 {
 	color: #fff;
 }
 .tabs2 li.current {
-	background-color: #f0a30a; /amber
+	background-color: #f0a30a; /*amber*/
 }
 .navpath {
 	border: none;
@@ -1111,4 +1112,22 @@ text-align: center;
 border-radius: 0px;
 margin-left: 2px;
 margin-right: 2px;
+}
+/* navtree */
+#nav-tree {
+background-color: #fdfdfd;
+background-image: none;
+font-size: 1rem;
+}
+#nav-tree .selected {
+background-image: none;
+	background-color: #F0A31A;/*amber*/
+	text-shadow:none;
+}
+#nav-tree .label{
+	font-size: .9rem;
+}
+.ui-resizable-e{
+	background-image: none;
+	background-color: #c4c8ca;
 }
