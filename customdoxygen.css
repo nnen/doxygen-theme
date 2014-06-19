@@ -12,6 +12,7 @@ font-family: "Segoe UI", "Lucida Sans Unicode", Helvetica, Arial, Verdana, 'Robo
 color: #111;
 font-size: 1rem;
 }
+.arrow,
 .navpath li.navelem a,
 #navrow4 a,.icon, span.mlabel,
 tt, code, kbd, samp, a.el,
@@ -22,19 +23,20 @@ pre.fragment, div.line,
 .memname,
 .params .paramdir {
 	font-family: Consolas, 'Courier New', courier, Courier, monospace;
-	color: #111;
 }
 .title,
 .fieldtable th{
 	font-family: "Cambria", serif;
 }
-#projectname, #projectbrief,
+#projectname,#projectbrief,
 h1, h2, h3 {
 	font-family: "Segoe UI Light", 'Source Sans Pro', sans-serif;
-	color: #000;
 	margin: 1.75em 0 .2em 0;
 	font-weight: 200;
 }
+#projectname{color:#00aff0;font-weight:300;}
+#projectbrief{color:#16499a;}
+h1,h2,h3{color: #000;}
 /* @group Heading Levels */
 .title {
 	color: #333;
@@ -225,7 +227,7 @@ span.lineno a:hover {
 	background-color: #C8C8C8;
 }
 div.ah {
-	background-color: #16499a;/*amber*/
+	background-color: #16499a;/*darkBlue*/
 	font-weight: lighter;
 	color: #fff;/*white*/
 	margin-bottom: 3px;
@@ -917,6 +919,7 @@ dl.section dd {
 	margin: 0px;
 	width: 100%;
 	border-bottom: 1px solid #5373B4;
+	backround-color: gainsboro;
 }
 .image
 {
@@ -1072,7 +1075,7 @@ tr.heading h2 {
 	color: #fff;
 }
 .tabs2 li.current {
-	background-color: #f0a30a; /*amber*/
+	background-color: lightskyblue;/* #f0a30a;amber*/
 }
 .navpath {
 	border: none;
@@ -1121,7 +1124,7 @@ font-size: 1rem;
 }
 #nav-tree .selected {
 background-image: none;
-	background-color: #F0A31A;/*amber*/
+	background-color:lightskyblue;/*#f0a30a;/amber*/
 	text-shadow:none;
 }
 #nav-tree .label{
