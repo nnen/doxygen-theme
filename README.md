@@ -19,3 +19,12 @@ settings:
  * `HTML_EXTRA_STYLESHEET` - set to point to `customdoxygen.css`
  * `LAYOUT_FILE` - set to point to `DoxygenLayout.xml`
 
+License
+-------
+
+This theme is distribute under GNU General Public License v3. See the `LICENSE`
+file for the full text of the license.
+
+Alternatively, see the [GNU website](http://www.gnu.org/licenses/) for more
+infomation about GPL.
+
