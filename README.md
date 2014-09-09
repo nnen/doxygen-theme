@@ -2,12 +2,19 @@ Custom Doxygen Theme
 ====================
 
 This is a custom [doxygen](http://www.stack.nl/~dimitri/doxygen/) theme
-forked from [doxygen-theme](https://github.com/nnen/doxygen-theme) by nnen
-inspired by [Metro UI CSS](http://metroui.org.ua/)
+inspired by [Mac Developer Library](https://developer.apple.com/library/mac/navigation/index.html).
+
+Metro Theme
+-----------
+
+Metro UI theme in the `metro` directory has been pulled from
+[nafSadh's](https://github.com/nafSadh)
+[fork](https://github.com/nafSadh/doxygen-theme-metro) of the original theme.
 
 Example
 -------
-An example of documentation using this theme can be found at http://nafsadh.github.io/scire/doc/
+
+An example of documentation using this theme can be found at http://milik.cz/~jan/cppapp/docs/index.html.
 
 Installation
 ------------
